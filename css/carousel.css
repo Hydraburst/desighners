@@ -1,0 +1,132 @@
+.carousel {
+    position: relative;
+   
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    right: 2%;
+    opacity: 0;
+    padding-bottom: 272px;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    border: 2px solid #67AEFC;
+    border-radius: 15px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    font-size: 35px;
+    padding: 0 18px 3px 18px;
+    position: absolute;
+    top: 55%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+
+.carousel-control.prev {
+    left: 45%;
+    top: 80%;
+}
+
+.carousel-control.next {
+    right: 45%;
+    top: 80%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5
+{
+    display: block;
+}
+
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+@media (max-width: 1099px){
+    .carousel-control.prev {
+        left: 40%;
+        top: 90%;
+    }
+    
+    .carousel-control.next {
+        right: 40%;
+        top: 90%;
+    }
+    .carousel-item{
+        padding: 0 15px 100px 15px;
+    }
+}
+
+
+@media (max-width: 540px){
+    .carousel-control.prev {
+        left: 30%;
+        top: 80%;
+    }
+    
+    .carousel-control.next {
+        right: 30%;
+        top: 80%;
+    }
+}
+
+@media (max-width: 450px){
+    .carousel-item {
+        padding-bottom: 100px;
+    }
+    .carousel-control.prev {
+        left: 30%;
+        top: 93%;
+    }
+    
+    .carousel-control.next {
+        right: 30%;
+        top: 93%;
+    }
+}

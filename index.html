@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/grid_carousel.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav__container">
+            <div class="container nav">
+                <a href="" class="logo">
+                    <img class src="img/logo.png" alt="Developers">
+                </a>
+                    <a href="" class="menu__btn" id="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                <ul class="menu list-reset">
+                    <li>
+                        <a href="#">
+                            <p>Услуги</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Портфолио</p> 
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Этапы</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Дизайнеры</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class = "button" href="#">
+                            <span class="button__text">Заказать</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+        </div>  
+        <div class="popup" id="popup">
+            <div class="popup-wrap">
+                <ul class="burger__menu-list">
+                    <li class="burger__menu-item">
+                        <a data-goto=".steps" href="#" class="burger__menu-link">
+                            Услуги
+                        </a>    
+                    </li>
+                    <li class="burger__menu-item">
+                        <a data-goto=".steps" href="#" class="burger__menu-link">
+                            Портфолио
+                        </a>    
+                    </li>
+                    <li class="burger__menu-item">
+                        <a data-goto=".steps" href="#" class="burger__menulink">
+                            Этапы
+                        </a>    
+                    </li>
+                    <li class="burger__menu-item">
+                        <a data-goto=".steps" href="#" class="burger__menu-link">
+                            Дизайнеры
+                        </a>    
+                    </li>
+                </ul>
+            </div>    
+        </div>    
+        <div class="container">
+            <div class="hero__wrap">
+                <div class="hero__wrap-img">
+                    <img src="img/hero_img.png" alt="">
+                </div>    
+                <div class="hero__wrap-text">
+                    <div class="hero__wrap-title">
+                        <h1>Разработка <br> интернет-магазина
+                            с нуля за неделю
+                        </h1>
+                    </div>    
+                    <div class="hero__wrap-subtitle">
+                        <p>Дизайн интернет магазина, элементов микро UX, корзин, личного кабинета - от фирменного стиля 
+                            до пользовательского интерфейса в сжатые сроки 
+                            с командой Virtual Designers 
+                        </p>   
+                    </div>    
+                        <a href="" class="button hero__button">
+                            <span class="button__text">Заказать</span> 
+                        </a>
+                </div>    
+            </div>    
+        </div>    
+    </header>
+    <section class="propeties">
+        <div class="container">
+            <h2>Что входит в услугу по созданию дизайна интернет-магазина?</h2>
+            <ul class="accordion__list">
+                <li class="accordion">
+                    <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__circle"></span>
+                        <span class="accordion__title">Дизайн портала</span>
+                        <span class="accordion__icon"></span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                        <div class="div__black__line item__1"></div>
+                        <p>Дизайн портала — это оформление контента, совокупность всех графических элементов на <br> веб-странице. Основная задача дизайна — познакомить пользователя со страницей. Продуманный <br> дизайн создает нужное впечатление о компании.
+                        </p>
+                    </div>
+                </li>
+                <li class="accordion">
+                    <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__circle"></span>
+                        <span class="accordion__title">Дизайн мобильной версии</span>
+                        <span class="accordion__icon"></span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                        <div class="div__black__line item__2"></div>
+                        <div class="accordion__second-content">
+                            <p>Мобильная версия сайта удобна для пользователя, потому что сильно упрощена по сравнению с обычной версией. Мобильная версия дает наиболее приоритетную информацию, а также позволяет совершать заказ/покупку с минимумом действий. 
+                            </p>
+                            <p>При адаптивной версии вся структура сайта автоматически подстраивается под различную ширину экрана. 
+                                Для того, чтобы получить рабочий продукт не нужно писать все с нуля — достаточно лишь подправить CSS и HTML. 
+                            </p>
+                            <p>Один URL избавляет нас от ненужных редиректов, и надобности пользователю запоминать адрес мобильной версии.
+                            </p>
+                        </div>  
+                    </div>
+                </li>
+                <li class="accordion">
+                    <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__circle"></span>
+                        <span class="accordion__title">Дизайн десктопной версии </span>
+                        <span class="accordion__icon"></span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                        <div class="div__black__line item__3"></div>
+                        <p>Десктопную версию сайта просматривают пользователи со стационарных компьютеров. Основная <br> цель: посерфить, углубиться в детали, получить больше информации, сравнить, выбрать, прицениться.
+                        </p>
+                    </div>
+                </li>
+                <li class="accordion">
+                    <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__circle"></span>
+                        <span class="accordion__title">Пользовательский интерфейс</span>
+                        <span class="accordion__icon"></span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                        <div class="div__black__line item__4"></div>
+                            <div class="accordion__fourth-content">
+                                <p>Цель дизайна пользовательского интерфейса - сделать взаимодействие максимально простым и эффективным, насколько это возможно, с точки зрения достижения целей пользователя. Хороший дизайн пользовательского интерфейса облегчает выполнение поставленной задачи, не привлекая к себе лишнего внимания. 
+                                </p>
+                            </div>    
+                    </div>
+                </li>
+                <li class="accordion">
+                    <button class="accordion__control" aria-expanded="false">
+                        <span class="accordion__circle"></span>
+                        <span class="accordion__title">Микро UX</span>
+                        <span class="accordion__icon"></span>
+                    </button>
+                    <div class="accordion__content" aria-hidden="true">
+                        <div class="div__black__line item__5"></div>
+                        <p>
+                            Микро-анимация может изменить восприятие продукта, пользовательское поведение и повысить конверсию. Небольшие, преимущественно функциональные анимации поддерживают пользователя: обеспечивают визуальную обратную связь и более понятно отражают происходящие изменения. Микро-анимации способны многое объяснить без слов.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="properties__margin">
+        </div>
+    </section>
+    <section class="steps" id="steps">
+        <h1 class="steps__title">Этапы разработки интернет-магазина</h1>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <div class="steps__wrap">    
+                        <div class="steps__wrap-img">
+                            <img src="img/slider_img_1.png" alt="block" class="">
+                        </div>    
+                        <div class="steps__wrap-text">
+                            <h3>1.Анализ</h3>
+                            <p>Для того, чтобы онлайн-магазин приносил выгоду, перед его запуском необходимо провести анализ других предложений рынка, оценить конкурентов и найти наиболее удобное решение. </p>
+                        </div>    
+                    </div>    
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <div class="steps__wrap">    
+                        <div class="steps__wrap-img">
+                            <img src="img/slider_img_2.png" alt="block" class="">
+                        </div>    
+                        <div class="steps__wrap-text">
+                            <h3>2. Визуальное решение</h3>
+                            <p>Разработка дизайна ключевых страниц магазина – главная, каталог, информационные разделы, раздел корзины, товаров. Для нас главное – передать настроение бренда, сделать удобный для пользователя сайт. </p>
+                        </div>    
+                    </div>    
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <div class="steps__wrap">    
+                        <div class="steps__wrap-img">
+                            <img src="img/slider_img_3.png" alt="block" class="">
+                        </div>    
+                        <div class="steps__wrap-text">
+                            <h3>3. Техническая реализация</h3>
+                            <p>После утверждения дизайн-макета наступает следующий этап – верстка. Это трудоемкий процесс: программисты должны все тщательно прописать, чтобы не допустить технических ошибок.</p>
+                        </div>    
+                    </div>    
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <div class="steps__wrap">    
+                        <div class="steps__wrap-img">
+                            <img src="img/slider_img_4.png" alt="block" class="">
+                        </div>    
+                        <div class="steps__wrap-text">
+                            <h3>4. Наполнение контентом </h3>
+                        <p>Создание и публикация текстов, а также видео материала. Хороший контент и качественные фотографии привлекают больше посетителей и помогают клиенту лучше ознакомиться с ассортиментом. </p>
+                        </div>    
+                    </div>    
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <div class="steps__wrap">    
+                        <div class="steps__wrap-img">
+                            <img src="img/slider_img_5.png" alt="block" class="">
+                        </div>    
+                        <div class="steps__wrap-text">
+                           <h3>5. Тестирование</h3>
+                           <p>Составление плана тестирования для определения ошибок. Проверка работы сайта и визуального восприятия для улучшения сайта. Также используются чек-листы для четкого определения ошибок и их устранения.</p>
+                        </div>    
+                    </div>    
+                </div>
+                <label for="carousel-5" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-4" class="carousel-control next control-3">›</label>
+                <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+                <label for="carousel-5" class="carousel-control next control-4">›</label>
+                <label for="carousel-4" class="carousel-control prev control-5">‹</label>
+                <label for="carousel-1" class="carousel-control next control-5">›</label>
+            </div>
+        </div>
+    </section>
+    <section class="examples">
+        <div class="container">
+            <h2 class="examples__title">Примеры онлайн-магазинов</h2>
+            <div class="card__grid"> 
+                <div class="card__grid-item item-1">
+					<div class="card__grid-item-text">
+                        <h3>Онлайн-магазин</h3>
+                        <p>для оптовых покупок</p>
+					</div>
+				</div>		
+                <div class="card__grid-item item-2">
+					<div class="card__grid-item-2">
+						<div class="card__grid-item-text">
+                            <h3>Онлайн-магазин</h3>
+                            <p>для флористов</p>
+						</div>
+					</div>
+				</div>
+                <div class="card__grid-item item-3">
+					<div class="card__grid-item-3">
+						<div class="card__grid-item-text">
+                            <h3>Онлайн-магазин</h3>
+                            <p>для парикмахеров</p>
+						</div>
+					</div>
+				</div>
+                <div class="card__grid-item item-4">
+					<div class="card__grid-item-text">
+                        <h3>Онлайн-магазин</h3>
+                        <p>для визажистов</p>
+					</div>
+				</div>		
+                <div class="card__grid-item item-5">
+					<div class="card__grid-item-text">
+                        <h3>Онлайн-магазин</h3>
+                        <p>для кондитеров</p>
+					</div>
+				</div>		
+                <div class="card__grid-item item-6">
+					<div class="card__grid-item-text">
+                        <h3>Онлайн-магазин</h3>
+                        <p>для художников</p>
+					</div>
+				</div>		
+            </div>   
+            <div class="grid-carousel">
+                <div class="grid-carousel-inner">
+                    <input class="grid-carousel-open" type="radio" id="grid-carousel-1" name="grid-carousel" aria-hidden="true" hidden="" checked="checked">
+                    <div class="grid-carousel-item">
+                        <div class="container__grid-carousel">     
+                            <div class="card__grid-item item-1">
+                                <div class="card__grid-item-text">
+                                    <h3>Онлайн-магазин</h3>
+                                    <p>для оптовых покупок</p>
+                                </div>
+                            </div>		
+                            <div class="card__grid-item item-2">
+                                <div class="card__grid-item-2">
+                                    <div class="card__grid-item-text">
+                                        <h3>Онлайн-магазин</h3>
+                                        <p>для флористов</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__grid-item item-3">
+                                <div class="card__grid-item-3">
+                                    <div class="card__grid-item-text">
+                                        <h3>Онлайн-магазин</h3>
+                                        <p>для парикмахеров</p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>    
+                    </div>
+                    <input class="grid-carousel-open" type="radio" id="grid-carousel-2" name="grid-carousel" aria-hidden="true" hidden="">
+                    <div class="grid-carousel-item">
+                        <div class="container__grid-carousel"> 
+                            <div class="card__grid-item item-4">
+                                <div class="card__grid-item-text">
+                                    <h3>Онлайн-магазин</h3>
+                                    <p>для визажистов</p>
+                                </div>
+                            </div>		
+                            <div class="card__grid-item item-5">
+                                <div class="card__grid-item-text">
+                                    <h3>Онлайн-магазин</h3>
+                                    <p>для кондитеров</p>
+                                </div>
+                            </div>		
+                            <div class="card__grid-item item-6">
+                                <div class="card__grid-item-text">
+                                    <h3>Онлайн-магазин</h3>
+                                    <p>для художников</p>
+                                </div>
+                            </div>		
+                        </div>   
+                    </div>
+                    <label for="grid-carousel-2" class="grid-carousel-control next control-1">›</label>
+                    <label for="grid-carousel-1" class="grid-carousel-control prev control-2">‹</label>
+                    <label for="grid-carousel-2" class="grid-carousel-control prev control-1">‹</label>
+                    <label for="grid-carousel-1" class="grid-carousel-control next control-2">›</label>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="info">
+            <div class="info__container">
+                    <div class="info__container-img">
+                        <img src="img/orders.png" alt="" class="info__container-img">
+                    </div>         
+                <div class="info__container-text">
+                    <h1 class="info__title">Необходимо больше информации?</h1>
+                    <p>Если Вы владелец онлайн-магазина или только начинаете свой путь в электронной коммерции и вам нужен уникальный дизайн онлайн магазина для стартапа, обратитесь к нашему веб дизайнеру. За выгодную цену и короткий период времени, он поможет  визуализировать ваш веб проект.</p>
+                    <a href="" class="button info__button">
+                        <span class="button__text">Оставить заявку</span> 
+                    </a>
+                </div>
+            </div>
+    </section>
+    <section class="discuss">
+        <div class="container">
+            <div class="discuss__container-text">
+                <h2 class="discuss__container-title">Обсудить проект</h2>
+                <p class="discuss__container-subtitle">Расскажите о своих бизнес-целях и мы поможем вам в их достижении</p>
+            </div>
+            <div class="discucss__container">
+                 <form action="#" name="form" >
+                    <div class="discuss__container-form">
+                        <input type="text" name="name" value="" placeholder="Имя" required>
+                        <input type="text" name="social__media" value="" placeholder="Telegram/Viber" required>
+                        <input type="email" name="email" value="" placeholder="Email" required>
+                        <input type="button" value="Отправить" class="button form__button"> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="merch__container">
+                <div class="footer__logo">
+                    <a href="">
+                        <img src="img/footer__logo.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__social-links">
+                    <ul class="footer__social-list">
+                        <li class="footer__socail-item">
+                            <a href="#">
+                                <img src="img/instagram_logo.png" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socail-item">
+                            <a href="#">
+                                <img src="img/facebook_logo.png" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socail-item">
+                            <a href="#">
+                                <img src="img/telegram_logo.png" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socail-item">
+                            <a href="#">
+                                <img src="img/viber_logo.png" alt="">
+                            </a>
+                        </li>    
+                        <li class="footer__socail-item">
+                            <a href="#">
+                                <img src="img/whats_upp_logo.png" alt="">
+                            </a>
+                        </li>    
+                    </ul> 
+                </div>
+            </div>    
+            <div class="contacts__container">                
+                <div class="contact">
+                    <div class="contact-image">
+                        <img src="img/viber_logo.png" alt="#">
+                    </div>
+                    <div class="contact-wrap">
+                        <p class="contact-text">Валерия: +380505859409</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact-image">
+                        <img src="img/viber_logo.png" alt="#">
+                    </div>
+                    <div class="contact-wrap">
+                        <p class="contact-text">Анна: +380505859409</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact-image">
+                        <img src="img/viber_logo.png" alt="#">
+                    </div>
+                    <div class="contact-wrap">
+                        <p class="contact-text">Валерия: +380505859409</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_email">
+                <p>hr@dv-s.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+                <p>Developers 2018-2022 © All rights reserved</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

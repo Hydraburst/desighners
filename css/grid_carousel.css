@@ -1,0 +1,123 @@
+.grid-carousel {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    display: none;
+   
+}
+
+.grid-carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.grid-carousel-open:checked + .grid-carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.grid-carousel-item {
+    position: absolute;
+    right: 2%;
+    opacity: 0;
+
+}
+
+.grid-carousel-control {
+    border: 2px solid #67AEFC;
+    border-radius: 15px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    font-size: 35px;
+    padding: 0 18px 3px 18px;
+    position: absolute;
+    top: 55%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+
+.grid-carousel-control.prev {
+    left: 40%;
+    top: 100%;
+}
+
+.grid-carousel-control.next {
+    right: 40%;
+    top: 100%;
+}
+
+.grid-carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#grid-carousel-1:checked ~ .control-1,
+#grid-carousel-2:checked ~ .control-2
+
+{
+    display: block;
+}
+
+.carousel___grid{
+    background-color: #DAECFF;
+}
+
+.container__grid-carousel{
+	display: grid;
+	grid-template-rows: 1fr;
+	gap: 20px;
+	padding-bottom: 120px;
+	max-width: 1100px;
+	margin: 0 auto;
+	max-width: 563px;
+}
+
+@media (max-width: 1199px) {
+	.grid-carousel{
+		overflow: visible;
+		max-height: fit-content;
+		display: block;
+	}
+    .grid-carousel-control.prev {
+        left: 40%;
+        top: 96%;
+    }
+    
+    .grid-carousel-control.next {
+        right: 40%;
+        top: 96%;
+    }
+	
+}
+
+@media (max-width: 1099px){
+    .grid-carousel-control.prev {
+        left: 40%;
+        top: 96%;
+    }
+    
+    .grid-carousel-control.next {
+        right: 40%;
+        top: 96%;
+    }
+}
+
+
+@media (max-width: 540px){
+    .grid-carousel-control.prev {
+        left: 30%;
+        top: 96%;
+    }
+    
+    .grid-carousel-control.next {
+        right: 30%;
+        top: 96%;
+    }
+}
